@@ -1,0 +1,66 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-bar nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.top-bar nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-bar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-with-image {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.header-with-image img {
+    display: block;
+    margin: 0 auto; /* Resmi ortalamak için */
+}
+
+.car-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.car {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.car img {
+    max-width: 100%;
+}
+
+.car-price {
+    font-weight: bold;
+    color: #ff6600;
+    margin-top: 10px;
+}
