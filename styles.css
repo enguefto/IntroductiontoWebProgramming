@@ -37,7 +37,7 @@ body {
 
 .header-with-image img {
     display: block;
-    margin: 0 auto; /* Resmi ortalamak için */
+    margin: 0 auto;
 }
 
 .car-section {
@@ -61,9 +61,10 @@ body {
 
 .car-price {
     font-weight: bold;
-    color: #ff6600;
-    margin-top: 10px;
+    color: #000000;
+    margin-top: 100px;
 }
+
 
 @media (max-width: 768px) {
     .top-bar nav ul {
