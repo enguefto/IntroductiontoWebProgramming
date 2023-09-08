@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araba Bilgi Sayfası</title>
+    <link rel="stylesheet" href="carInfo.css">
+</head>
+<body>
+    <header class="top-bar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+            <div class="gallery-container">
+                <img class="gallery-image" id="current-image" src="assets\images\tesla.png" alt="Araba Resmi 1">
+                <div class="gallery-controls">
+                    <button class="prev-button" onclick="prevImage()">Önceki</button>
+                    <button class="next-button" onclick="nextImage()">Sonraki</button>
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Key Specifications of Volvo XC90</th>
+                
+            </tr>
+            <tr>
+                <td>Brand</td>
+                <td>Tesla</td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td>Roadster</td>
+            </tr>
+            <tr>
+                <td>Year</td>
+                <td>2023 Yılı</td>
+            </tr>
+            <tr>
+                <td>Engine</td>
+                <td>4 Electric Motor</td>
+            </tr>
+            <tr>
+                <td>Transmission</td>
+                <td>Automatic</td>
+            </tr>
+            <tr>
+                <td>Max speed</td>
+                <td>275 KM/H</td>
+            </tr>
+            
+        </table>
+    </div>
+    <script>
+        const images = [
+            "./assets/images/tesla1.png",
+            "./assets/images/tesla2.png",
+            "./assets/images/tesla3.png"
+            
+        ];
+
+        let currentImageIndex = 0;
+        const currentImage = document.getElementById("current-image");
+
+        function showImage(index) {
+            currentImageIndex = index;
+            currentImage.src = images[index];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        showImage(currentImageIndex);
+    </script>
+</body>
+</html>

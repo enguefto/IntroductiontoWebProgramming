@@ -1,10 +1,13 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Gotham', sans-serif;
+    background-image: url('bg.png'); 
+    background-size: contain;
+    background-attachment: scroll; 
+    background-color: rgba(0, 0, 0); 
 }
 
 .top-bar {
+    font-family: 'Gotham', sans-serif;
     background-color: #333;
     color: #fff;
     padding: 10px 0;
@@ -53,6 +56,32 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+    /* background-image: url('s.jpeg'); 
+     background-size: cover; 
+     background-position: center; 
+     padding: 20px; 
+     color: #fff; */
+    
+}
+.car a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    opacity: 0; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.car a:hover {
+    opacity: 1; 
 }
 
 .car img {
@@ -60,6 +89,7 @@ body {
 }
 
 .car-price {
+    font-family: 'Gotham', sans-serif;
     font-weight: bold;
     color: #000000;
     margin-top: 100px;
@@ -78,3 +108,49 @@ body {
         flex-basis: calc(50% - 20px);
     }
 }
+.buy-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #f10f0f;
+    border-radius: 4px;
+}
+
+#priceFilter {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    z-index: 1;
+}
+
+.image-description {
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-top: 10px; 
+}
+
+.car-info {
+    text-align: left;
+}
+
